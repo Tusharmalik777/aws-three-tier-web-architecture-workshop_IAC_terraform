@@ -1,0 +1,19 @@
+AWS custome VPC creation steps:
+
+1. Select region
+2. Create VPC
+3. Enable DNS hostnames in VPC
+4. Create Internet gateway
+5. Associate that IG to the create VPC
+6. Create public subnets
+7. Enable Auto assign public IP settings
+8. Create public route table
+9. Add public route to public route table
+10. Associate the public subnets with the public route table
+11. Create private subnets
+12. Create Nat gateways in public subnets
+13. Create Elastic IP and associate it with NAT gateway
+14. Create private route table
+15. Add public route to the private route table
+16 Associate private subnets with the private Route table
+ 
