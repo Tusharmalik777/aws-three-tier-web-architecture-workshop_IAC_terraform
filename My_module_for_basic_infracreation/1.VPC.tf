@@ -78,6 +78,7 @@ resource "aws_internet_gateway" "IGW" {
 #------Nat gateway-----(1 for each AZ for high availability)
 
 resource "aws_eip" "Nat-Gateway-EIP-AZ1" {
+
 }
 resource "aws_nat_gateway" "NAT-GW-AZ1" {
   allocation_id = aws_eip.Nat-Gateway-EIP-AZ1.id
